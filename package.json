@@ -8,12 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/M0diis/discordjs-bot-template.git"
+    "url": "git+https://github.com/M0diis/djs-bot-template.git"
   },
   "author": "m0dii",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/M0diis/discordjs-bot-template/issues"
+    "url": "https://github.com/M0diis/djs-bot-template/issues"
   },
-  "homepage": "https://github.com/M0diis/discordjs-bot-template#readme"
+  "homepage": "https://github.com/M0diis/djs-bot-template#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
 }
