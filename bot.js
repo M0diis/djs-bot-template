@@ -53,6 +53,22 @@ client.on('message', message =>
     var cmd = args.shift();
 
     var joinedArgs = restArguments(args, 0);
+
+    const command = client.commands.get(cmd);
+
+    if (command) command.run(client, message, cmd, args);
+
+    if (!command)
+    {
+        embed.setDescription(`
+        The command: \`${PREFIX}${cmd}\` is not recognised. 
+        
+        The prefix for this server is: \`${PREFIX}\`
+        For a list of commands, use \`${PREFIX}\`help`
+        );
+
+        return message.channel.send(embed);
+    }
 });
 
 /**
