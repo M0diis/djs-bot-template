@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/M0diis/djs-bot-template#readme",
   "dependencies": {
-    "discord.js": "^12.4.1"
+    "discord.js": "^14.0.0"
   }
 }
